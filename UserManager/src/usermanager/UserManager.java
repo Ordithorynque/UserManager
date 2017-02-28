@@ -15,7 +15,12 @@ public class UserManager {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+
+        Connection connection = new Connection();
+        
+        connection.setLocationRelativeTo(null);
+        
+        connection.setVisible(true);
     }
     
 }
