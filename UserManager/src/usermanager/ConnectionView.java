@@ -139,6 +139,7 @@ else if (pf_Password.getText().equals(comptes.get(tf_Identifiant.getText()))){
 
          Utilisateurs vueUtilisateur = new Utilisateurs();
          
+        this.dispose();
         vueUtilisateur.setLocationRelativeTo(null);
         
         vueUtilisateur.setVisible(true);

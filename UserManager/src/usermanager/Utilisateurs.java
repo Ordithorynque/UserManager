@@ -59,6 +59,7 @@ public class Utilisateurs extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jButton1.setText("Voir Utilisateur");
+        jButton1.setEnabled(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -66,6 +67,11 @@ public class Utilisateurs extends javax.swing.JFrame {
         });
 
         jButton2.setText("Ajouter Utilisateur");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         tableUsers.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -207,6 +213,15 @@ public class Utilisateurs extends javax.swing.JFrame {
     private void tf_PseudoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_PseudoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tf_PseudoActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        AjouterUtilisateur addUser = new AjouterUtilisateur();
+
+        this.dispose();
+        
+        addUser.setLocationRelativeTo(null);
+        addUser.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
