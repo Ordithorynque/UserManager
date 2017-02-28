@@ -12,14 +12,14 @@ import javax.swing.JOptionPane;
  *
  * @author Formation
  */
-public class Connection extends javax.swing.JFrame {
+public class ConnectionView extends javax.swing.JFrame {
 
     /**
-     * Creates new form Connection
+     * Creates new form ConnectionView
      */
        HashMap<String, String> comptes = new HashMap<String, String>();
     
-    public Connection() {
+    public ConnectionView() {
         initComponents();
         
                 
@@ -161,20 +161,21 @@ else if (pf_Password.getText().equals(comptes.get(tf_Identifiant.getText()))){
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Connection.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ConnectionView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Connection.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ConnectionView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Connection.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ConnectionView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Connection.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ConnectionView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Connection().setVisible(true);
+                new ConnectionView().setVisible(true);
             }
         });
     }
