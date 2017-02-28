@@ -16,7 +16,7 @@ public class UserManager {
      */
     public static void main(String[] args) {
 
-        Connection connection = new Connection();
+        ConnectionView connection = new ConnectionView();
         
         connection.setLocationRelativeTo(null);
         
