@@ -135,7 +135,15 @@ if (ID == null){
 
 else if (pf_Password.getText().equals(comptes.get(tf_Identifiant.getText()))){
 
-           JOptionPane.showMessageDialog(this,"blah", "CONNECTÉ", JOptionPane.INFORMATION_MESSAGE);}
+         //  JOptionPane.showMessageDialog(this,"blah", "CONNECTÉ", JOptionPane.INFORMATION_MESSAGE);
+
+         Utilisateurs vueUtilisateur = new Utilisateurs();
+         
+        vueUtilisateur.setLocationRelativeTo(null);
+        
+        vueUtilisateur.setVisible(true);
+
+}
         
         else {
         
