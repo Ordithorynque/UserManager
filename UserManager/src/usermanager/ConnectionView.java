@@ -53,7 +53,6 @@ public class ConnectionView extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        tf_Identifiant.setText(" ");
         tf_Identifiant.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tf_IdentifiantActionPerformed(evt);
